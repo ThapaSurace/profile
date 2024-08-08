@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { nuto } from "@/components/fonts/fonts";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
@@ -22,8 +21,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "flex overflow-hidden h-screen bg-background font-sans antialiased",
-          nuto.className
+          "flex overflow-hidden h-screen bg-background font-sans antialiased"
         )}
       >
         <ThemeProvider
