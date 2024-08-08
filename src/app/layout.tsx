@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { nuto } from "@/components/fonts/fonts";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
+import ThemeToggle from "@/components/ThemeToggle";
+import { SideBar } from "@/components/SideBar";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +19,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "flex overflow-hidden h-screen bg-background font-sans antialiased",
+          nuto.className
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SideBar />
+          <div className="absolute top-6 right-20 z-50">
+         <ThemeToggle />
+         </div>
+         <div className="lg:pl-2 lg:pt-2 flex-1 overflow-y-auto">
+            <div className="flex-1 min-h-screen lg:rounded-tl-xl overflow-y-auto border">
+              {children}
+            </div>
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
