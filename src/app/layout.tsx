@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import ThemeToggle from "@/components/ThemeToggle";
 import { SideBar } from "@/components/SideBar";
+import Slider from "@/components/Slider";
 
 
 export const metadata: Metadata = {
@@ -31,8 +32,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SideBar />
-          <div className="absolute top-6 right-20 z-50">
+          <div className="absolute top-6 right-10 md:right-20 z-50">
          <ThemeToggle />
+         </div>
+         <div className="absolute md:hidden top-6 left-6 z-50">
+          <Slider />
          </div>
          <div className="lg:pl-2 lg:pt-2 flex-1 overflow-y-auto">
             <div className="flex-1 min-h-screen lg:rounded-tl-xl overflow-y-auto border">

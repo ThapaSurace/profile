@@ -11,7 +11,8 @@ const TechStack = () => {
           <div key={link.label}>
             <Icon
               color={color}
-              className="text-4xl cursor-pointer hover:scale-125 transition duration-300 ease-in-out"
+              size={50}
+              className="cursor-pointer hover:scale-125 transition duration-300 ease-in-out dark:bg-white p-1 rounded-md"
             />
           </div>
         );

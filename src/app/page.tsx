@@ -1,11 +1,12 @@
-import Projects from "@/components/Projects"
-import TechStack from "@/components/TechStack"
+import Projects from "@/components/Projects";
+import TechStack from "@/components/TechStack";
+import { Separator } from "@/components/ui/separator";
 
 const page = () => {
   return (
     <div className="container space-y-10">
-         {/* intro */}
-         <div className=" max-w-screen-md">
+      {/* intro */}
+      <div className=" max-w-screen-md">
         <h1 className="text-3xl font-bold mb-4 tracking-wide">
           Hello there! I'm Suresh Thapa.
         </h1>
@@ -21,7 +22,7 @@ const page = () => {
         </p>
       </div>
 
-      <div className="border" />
+      <Separator />
 
       {/* techStack */}
       <div>
@@ -29,16 +30,15 @@ const page = () => {
         <TechStack />
       </div>
 
-      <div className="border" />
+      <Separator />
 
       {/* projects */}
-
       <div>
         <h2 className="mb-4">Feature Projects</h2>
         <Projects />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
