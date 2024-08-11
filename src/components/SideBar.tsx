@@ -11,7 +11,7 @@ export const SideBar = () => {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ x: -220 }}
+        initial={{ x: -230 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.3, ease: "linear" }}
         className="py-8 px-10 hidden md:block"
