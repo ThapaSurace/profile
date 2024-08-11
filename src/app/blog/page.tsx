@@ -2,7 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='flex items-center justify-center h-screen'>
+     <span className='text-3xl font-semibold uppercase'>No articles</span>
+    </div>
   )
 }
 
