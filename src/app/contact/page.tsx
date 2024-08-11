@@ -3,14 +3,14 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import React from 'react'
 
-const page = () => {
+const ContactPage = () => {
   return (
     <div className="container space-y-10">
       <div>
         <h1 className='mb-4'>
           Contact Me
         </h1>
-        <p className="max-w-xl text-lg font-semibold">
+        <p className="">
           Reach out to me over email or fill up this contact form. I will get
           back to you ASAP - I promise.
         </p>
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ContactPage
