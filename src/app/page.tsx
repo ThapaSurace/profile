@@ -1,6 +1,8 @@
 import Projects from "@/components/Projects";
+import ProjectSkeleton from "@/components/skeleton/ProjectSkeleton";
 import TechStack from "@/components/TechStack";
 import { Separator } from "@/components/ui/separator";
+import { Suspense } from "react";
 
 const page = () => {
   return (
@@ -35,7 +37,9 @@ const page = () => {
       {/* projects */}
       <div>
         <h2 className="mb-4">Feature Projects</h2>
-        <Projects />
+        <Suspense fallback={<ProjectSkeleton />}>
+          <Projects />
+        </Suspense>
       </div>
     </div>
   );
