@@ -1,7 +1,10 @@
 import Timeline from "@/components/Timeline";
 import { Separator } from "@/components/ui/separator";
 
-const page = () => {
+
+const AboutPage = () => {
+
+
   return (
     <div className="container space-y-10">
       <div>
@@ -29,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;
