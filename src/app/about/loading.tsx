@@ -1,9 +1,6 @@
-import React from 'react'
-
+import FullPageLoading from '@/components/FullPageLoading'
 const loading = () => {
-  return (
-    <div>loading</div>
-  )
+  return <FullPageLoading />
 }
 
 export default loading
