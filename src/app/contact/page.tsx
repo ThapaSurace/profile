@@ -6,6 +6,7 @@ import React from 'react'
 const ContactPage = () => {
   return (
     <div className="container space-y-10">
+
       <div>
         <h1 className='mb-4'>
           Contact Me
@@ -18,7 +19,7 @@ const ContactPage = () => {
 
       <div>
         <form className='space-y-6'>
-            <div className='flex gap-4'>
+            <div className='flex flex-col gap-4 md:flex-row'>
                 <Input type="text" placeholder='your name' />
                 <Input type="email" placeholder='your email' />
             </div>
@@ -29,6 +30,7 @@ const ContactPage = () => {
             </div>
         </form>
       </div>
+ 
     </div>
   )
 }

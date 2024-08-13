@@ -8,8 +8,8 @@ const page = () => {
   return (
     <div className="container space-y-10">
       {/* intro */}
-      <div className=" max-w-screen-md">
-        <h1 className="text-3xl font-bold mb-4 tracking-wide">
+      <div className=" max-w-screen-md ">
+        <h1 className="mb-4">
           Hello there! I'm Suresh Thapa.
         </h1>
         <p className="mb-4">
