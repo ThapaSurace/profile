@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import ThemeToggle from "@/components/ThemeToggle";
 import { SideBar } from "@/components/SideBar";
 import Slider from "@/components/Slider";
+import NextTopLoader from 'nextjs-toploader';
+import { notoSerif } from "@/components/fonts/fonts";
 
 
 export const metadata: Metadata = {
@@ -19,12 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          "flex overflow-hidden h-screen bg-background font-sans antialiased"
+          "flex overflow-hidden h-screen bg-background antialiased", notoSerif.className
         )}
       >
+        <NextTopLoader template='<div class="bar" role="bar"><div class="peg"></div></div>' />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
