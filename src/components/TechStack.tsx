@@ -9,7 +9,7 @@ import {
 
 const TechStack = () => {
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex gap-4 flex-wrap items-center">
       {tecStackLinks.map((link) => {
         const Icon = link.icon;
         const color = link.className;
@@ -20,8 +20,7 @@ const TechStack = () => {
                 <div>
                   <Icon
                     color={color}
-                    size={40}
-                    className="cursor-pointer hover:shadow-sm hover:scale-105 transition duration-150 ease-in-out dark:bg-white dark:p-1 rounded-md"
+                    className="text-3xl md:text-4xl cursor-pointer hover:shadow-sm hover:scale-105 transition duration-150 ease-in-out dark:bg-white dark:p-1 rounded-md"
                   />
                 </div>
               </TooltipTrigger>
