@@ -20,7 +20,7 @@ const TechStack = () => {
                 <div>
                   <Icon
                     color={color}
-                    className="text-3xl md:text-4xl cursor-pointer hover:shadow-sm hover:scale-105 transition duration-150 ease-in-out dark:bg-white dark:p-1 rounded-md"
+                    className="text-3xl md:text-4xl cursor-pointer hover:scale-125 transition duration-300 ease-in-out dark:bg-white dark:p-1 rounded-md"
                   />
                 </div>
               </TooltipTrigger>
