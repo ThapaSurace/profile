@@ -7,7 +7,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { SideBar } from "@/components/SideBar";
 import Slider from "@/components/Slider";
 import NextTopLoader from 'nextjs-toploader';
-import { notoSerif } from "@/components/fonts/fonts";
+import { robo } from "@/components/fonts/fonts";
 
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          "flex overflow-hidden h-screen bg-background antialiased", notoSerif.className
+          "flex overflow-hidden h-screen bg-background antialiased",robo.className
         )}
       >
         <NextTopLoader template='<div class="bar" role="bar"><div class="peg"></div></div>' />
