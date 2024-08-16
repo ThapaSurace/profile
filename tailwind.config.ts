@@ -20,7 +20,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        lustria:["var(--font-lustria)"],
+        lato:["var(--font-lato)"]
       },
       colors: {
         border: "hsl(var(--border))",
