@@ -14,11 +14,11 @@ const NavList = () => {
         href={link.href}
         className={twMerge(
           pathname === link.href &&
-            "transition duration-200  bg-background rounded-md border-2 font-semibold",
-          "px-4 py-3 text-secondary-foreground"
+            "transition duration-200 rounded-md border-2 font-semibold",
+          "px-4 py-3 tracking-wide text-secondary-foreground"
         )}
       >
-        <li className="flex gap-2 items-center text-secondary-foreground">
+        <li className="flex gap-2 items-center">
           <link.icon size={20} />
           <span>{link.label}</span>
         </li>
