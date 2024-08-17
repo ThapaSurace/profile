@@ -63,23 +63,21 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+
   h1 {
-    @apply scroll-m-20 text-4xl font-semibold tracking-tight font-lustria;
+    @apply scroll-m-20 text-4xl font-bold tracking-tight font-lustria;
   }
 
   h2 {
-    @apply text-2xl font-semibold leading-snug md:leading-normal font-lustria;
+    @apply text-2xl font-bold leading-snug md:leading-normal font-lustria;
   }
 
   h3 {
-    @apply text-xl font-semibold tracking-normal leading-snug md:leading-normal font-lustria;
+    @apply text-xl font-bold tracking-normal leading-snug md:leading-normal font-lustria;
   }
 
   p {
-    @apply tracking-wider text-sm md:text-base text-secondary-foreground;
+    @apply tracking-wider text-sm md:text-base font-light text-secondary-foreground;
   }
 
   input,
