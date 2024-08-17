@@ -2,21 +2,18 @@ import { SiCodeproject } from "react-icons/si";
 import Projects from "@/components/Projects";
 import { Suspense } from "react";
 import ProjectSkeleton from "@/components/skeleton/ProjectSkeleton";
-import { Separator } from "@/components/ui/separator";
-
+import SlideInFromLeft from "@/components/animation/SlideInFromLeft";
 
 const ProjectPage = () => {
   return (
     <div className="container space-y-10">
-      <div>
+      <SlideInFromLeft delay={0.3}>
         <SiCodeproject size={40} className="mb-2" />
         <h1 className="mb-10">Some of my projects</h1>
-      </div>
-      <Separator />
+      </SlideInFromLeft>
       <Suspense fallback={<ProjectSkeleton />}>
         <Projects />
       </Suspense>
-  
     </div>
   );
 };
