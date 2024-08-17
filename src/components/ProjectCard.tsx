@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ProjectCard = ({ item }: projectProps) => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 md:gap-8 cursor-pointer hover:bg-muted/40 p-4 rounded-md group">
+    <div className="flex flex-col md:flex-row gap-4 md:gap-8 cursor-pointer hover:bg-muted/40 px-4 py-10 rounded-md group border-y">
       <div
         className={`rounded-md relative w-full md:flex-[1] h-48 shadow ${
           item.id % 2 === 0 ? "md:order-1" : "md:order-2"
