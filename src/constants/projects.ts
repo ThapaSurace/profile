@@ -6,7 +6,7 @@ export const featuredProject = [
 		desc: 'A Fiverr clone built with the MERN (MongoDB, Express.js, React, Node.js) stack offers a robust and scalable platform for freelancers and clients to connect seamlessly.',
 		tags: ['React Js', 'Express js', 'Mongo DB', 'Tailwind css'],
 		github_link: 'https://github.com/ThapaSurace/Fiverr_clone',
-		demo_link: 'https://freelancerfinder.netlify.app/',
+		demo_link: 'https://freelancerfinder.vercel.app/',
 	},
 	{
 		id: 4,
@@ -28,7 +28,7 @@ export const projects = [
 		desc: 'A Fiverr clone built with the MERN (MongoDB, Express.js, React, Node.js) stack offers a robust and scalable platform for freelancers and clients to connect seamlessly.',
 		tags: ['React Js', 'Express js', 'Mongo DB', 'Tailwind css'],
 		github_link: 'https://github.com/ThapaSurace/Fiverr_clone',
-		demo_link: 'https://freelancerfinder.netlify.app/',
+		demo_link: 'https://freelancerfinder.vercel.app/',
 	},
 	{
 		id: 2,
