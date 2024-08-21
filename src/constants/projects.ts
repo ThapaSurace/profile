@@ -30,7 +30,7 @@ export const projects = [
 	{
 		id: 4,
 		project_name: 'Otaku Hub',
-		img: '/images/projects/anime.jpg',
+		img: '/images/projects/anime.JPG',
 		title: 'Otaku Hub',
 		desc: 'This anime information website, built with Next.js, Jikan API, and Tailwind CSS, provides detailed information on a wide range of anime series. It features efficient server-side rendering and API integration for seamless data retrieval and a responsive user interface.',
 		tags: ['HTML', 'CSS', 'Next.js', 'Tailwind CSS', 'Jikan API'],
