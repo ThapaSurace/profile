@@ -4,6 +4,7 @@ import ProjectSkeleton from '@/components/skeleton/ProjectSkeleton';
 import TechStack from '@/components/TechStack';
 import { Separator } from '@/components/ui/separator';
 import { Suspense } from 'react';
+import { featuredProject } from '@/constants/projects';
 
 const page = () => {
 	return (
@@ -38,7 +39,7 @@ const page = () => {
 					<h2 className='mb-4'>Feature Projects</h2>
 				</SlideInFromLeft>
 				<Suspense fallback={<ProjectSkeleton />}>
-					<Projects />
+					<Projects items={featuredProject} />
 				</Suspense>
 			</div>
 		</div>
