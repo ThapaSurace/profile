@@ -6,7 +6,10 @@ import Image from "next/image";
 
 const ProjectCard = ({ item }: projectProps) => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 md:gap-8 cursor-pointer hover:bg-muted/40 px-4 py-10 rounded-md group border-y">
+    <div
+      className="flex flex-col md:flex-row gap-4 md:gap-8 cursor-pointer hover:bg-muted/40 hover:scale-105 px-4 py-10 
+    hover:rounded-md hover:shadow group border-y border-slate-300 dark:border-slate-50/20 transition-all duration-300 ease-in-out"
+    >
       <div
         className={`rounded-md relative w-full md:flex-[1] h-48 shadow ${
           item.id % 2 === 0 ? "md:order-1" : "md:order-2"
@@ -41,13 +44,15 @@ const ProjectCard = ({ item }: projectProps) => {
         }`}
       >
         <div>
-          <h3 className="mb-2">{item.project_name}</h3>
-          <p className="leading-normal tracking-wide text-sm text-gray-800 dark:text-gray-300">{item.desc}</p>
+          <h3 className="mb-2 text-lg">{item.project_name}</h3>
+          <p className="text-secondary-foreground text-sm font-light">
+            {item.desc}
+          </p>
         </div>
         <div className="space-y-4">
           <div className="flex gap-1 flex-wrap">
             {item.tags.map((tag, index) => (
-              <Badge key={index} variant="secondary">
+              <Badge key={index} variant="secondary" className="text-xs">
                 {tag}
               </Badge>
             ))}

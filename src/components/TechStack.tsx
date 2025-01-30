@@ -1,4 +1,3 @@
-
 import { tecStackLinks } from "@/constants/tecStackLinks";
 import {
   Tooltip,
@@ -6,30 +5,35 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { AnimatedGroup } from "./ui/animated-group";
+import Image from "next/image";
 
 const TechStack = () => {
   return (
-    <div className="flex gap-4 flex-wrap items-center">
+    <AnimatedGroup
+      delay={0.6}
+      className="flex gap-6 flex-wrap items-center"
+      preset="scale"
+    >
       {tecStackLinks.map((link) => {
-        const Icon = link.icon;
-        const color = link.className;
         return (
           <TooltipProvider key={link.label}>
             <Tooltip>
               <TooltipTrigger>
-                <div>
-                  <Icon
-                    color={color}
-                    className="text-3xl md:text-4xl cursor-pointer hover:scale-125 transition duration-300 ease-in-out dark:bg-white dark:p-1 rounded-md"
-                  />
-                </div>
+                <Image
+                  src={link.imgSrc || ""}
+                  width={45}
+                  height={45}
+                  alt={link.label}
+                  className="dark:p-1 dark:rounded-md dark:bg-white hover:scale-110 transition-all duration-300 ease-in-out"
+                />
               </TooltipTrigger>
               <TooltipContent>{link.label}</TooltipContent>
             </Tooltip>
           </TooltipProvider>
         );
       })}
-    </div>
+    </AnimatedGroup>
   );
 };
 

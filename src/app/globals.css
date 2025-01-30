@@ -60,29 +60,25 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
-  h1 {
-    @apply scroll-m-20 text-4xl font-bold tracking-tight font-lustria;
-  }
-
-  h2 {
-    @apply text-2xl font-bold leading-snug md:leading-normal font-lustria;
-  }
-
-  h3 {
-    @apply text-xl font-bold tracking-normal leading-snug md:leading-normal font-lustria;
-  }
-
-  p {
-    @apply tracking-wider text-sm md:text-base font-light text-secondary-foreground;
-  }
-
   input,
   textarea {
     @apply p-4 rounded-md border w-full block focus:outline-none focus:border-slate-400;
+  }
+
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-lg font-semibold;
+  }
+
+  p {
+    @apply tracking-wide text-sm text-secondary-foreground;
   }
 }
 
@@ -93,5 +89,13 @@
   .para {
     @apply text-base lg:text-base font-normal text-secondary tracking-wider;
   }
+}
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
