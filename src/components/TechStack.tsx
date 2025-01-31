@@ -5,16 +5,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { AnimatedGroup } from "./ui/animated-group";
 import Image from "next/image";
 
 const TechStack = () => {
   return (
-    <AnimatedGroup
-      delay={0.6}
-      className="flex gap-6 flex-wrap items-center"
-      preset="scale"
-    >
+    <div className="flex gap-6 flex-wrap items-center">
       {tecStackLinks.map((link) => {
         return (
           <TooltipProvider key={link.label}>
@@ -33,7 +28,7 @@ const TechStack = () => {
           </TooltipProvider>
         );
       })}
-    </AnimatedGroup>
+    </div>
   );
 };
 
