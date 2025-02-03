@@ -30,7 +30,7 @@ const TimelineItem = ({
         >
           {date}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <div>
             <span className="font-light text-xs text-secondary-foreground">
               {label}
