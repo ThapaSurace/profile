@@ -1,4 +1,11 @@
 export const experienceData = [
+  // {
+  //   date: "Jul - Aug 2024",
+  //   title: "Web Developer Trainer",
+  //   role:"Web Developer Trainer",
+  //   description:
+  //     "Conducted a 35-hour training program at Himalayan Bank, teaching participants how to build robust web applications with React.js and Next.js.",
+  // },
     {
       date: "Jul - Aug 2024",
       title: "React.js and Next.js Trainer",
