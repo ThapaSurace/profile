@@ -13,6 +13,11 @@ import { Roboto_Slab } from "next/font/google";
 export const metadata: Metadata = {
   title: "Suresh Thapa",
   description: "Frontend Web Developer",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export const robo_slab = Roboto_Slab({
