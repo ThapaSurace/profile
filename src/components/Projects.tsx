@@ -3,7 +3,7 @@ import SlideInFromLeft from "@/components/animation/SlideInFromLeft";
 
 const Projects = ({ items }: any) => {
   return (
-    <div className="space-y-20">
+    <div className="space-y-10">
       {items.map((item: Project) => (
         <SlideInFromLeft key={item.id} xOffset={-50} delay={item.id * 0.6}>
           <ProjectCard item={item} />

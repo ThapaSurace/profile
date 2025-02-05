@@ -6,9 +6,9 @@ import { projects } from "@/constants/projects";
 const ProjectPage = () => {
   return (
     <div className="container space-y-4">
-      <SlideInFromLeft delay={0.3}>
+      <SlideInFromLeft delay={0.3} className="flex items-center gap-1 mb-10">
         <SiCodeproject size={40} className="mb-2" />
-        <h1 className="mb-10">Some of my projects</h1>
+        <h1 className="">Some of my projects</h1>
       </SlideInFromLeft>
       <Projects items={projects} />
     </div>

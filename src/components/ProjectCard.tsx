@@ -7,7 +7,7 @@ import Image from "next/image";
 const ProjectCard = ({ item }: projectProps) => {
   return (
     <div
-      className="flex flex-col md:flex-row gap-4 md:gap-8 cursor-pointer hover:bg-muted/40 hover:scale-105 px-4 py-10 
+      className="flex flex-col md:flex-row gap-4 md:gap-8 cursor-pointer hover:bg-muted/40  px-4 py-10 
     hover:rounded-md hover:shadow group border-y border-slate-300 dark:border-slate-50/20 transition-all duration-300 ease-in-out"
     >
       <div

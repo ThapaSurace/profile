@@ -49,7 +49,7 @@ export default function WorkExperience() {
           <Timeline educationData={experienceData} />
         </SlideInFromLeft>
 
-        <div className="mt-8">
+        <SlideInFromLeft delay={0.7} className="mt-8">
           <h2 className="text-xl mb-4 flex items-center gap-2">
             2. Freelance Web Developer & Trainer (2023 – Present)
           </h2>
@@ -65,7 +65,7 @@ export default function WorkExperience() {
               high-performance web applications.
             </li>
           </ul>
-        </div>
+        </SlideInFromLeft>
       </div>
 
       <SlideInFromLeft>
