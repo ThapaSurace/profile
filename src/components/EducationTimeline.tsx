@@ -1,5 +1,3 @@
-import { Badge } from "./ui/badge";
-
 interface EducationItemProps {
   label?: string;
   date: string;
@@ -26,7 +24,7 @@ const TimelineItem = ({
       >
         <div
           className="md:absolute -left-2 translate-y-0.5 inline-flex items-center justify-center text-xs w-24 h-6 mb-3 
-        md:mb-0 rounded-full bg-primary-foreground text-white"
+        md:mb-0 rounded-full dark:bg-gray-700 bg-gray-800 text-white"
         >
           {date}
         </div>
