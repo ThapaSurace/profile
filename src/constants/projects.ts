@@ -4,7 +4,7 @@ export const featuredProject = [
     project_name: "Portfolio Website",
     img: "/images/projects/vsal.png",
     desc: "A portfolio website built with Next.js and ShadCN UI, offering a modern and responsive design to showcase projects and skills.",
-    tags: ["Next.js", "ShadCN UI", "Tailwind CSS"],
+    tags: ["React.js", "Next.js", "ShadCN UI", "Tailwind CSS"],
     demo_link: "https://bishaldahalkhatri.vercel.app/",
   },
   {
