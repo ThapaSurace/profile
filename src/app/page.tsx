@@ -32,7 +32,7 @@ const page = () => {
         <TechStack />
       </SlideInFromLeft>
 
-      <SlideInFromLeft delay={0.3}>
+      <SlideInFromLeft delay={0.4}>
         <Separator className="my-10" />
       </SlideInFromLeft>
 
@@ -40,8 +40,8 @@ const page = () => {
       <div>
         <SlideInFromLeft delay={0.5}>
           <h2 className="mb-4">Feature Projects</h2>
+          <Projects items={featuredProject} />
         </SlideInFromLeft>
-        <Projects items={featuredProject} />
       </div>
     </div>
   );
